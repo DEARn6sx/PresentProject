@@ -28,8 +28,9 @@ func ConnectionDB() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	//fmt.Println("DB = ",&DB)
 	DB = sdb
+	//fmt.Println("SDB = ",DB)
 
 	// Check the connection
 	err = DB.Ping()
