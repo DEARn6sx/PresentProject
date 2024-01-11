@@ -7,5 +7,6 @@ import (
 
 func main() {
 	crudpgdb.ConnectionDB()
-	crudpgdb.CreateProduct("BMW",1500000,2)
+	//crudpgdb.CreateProduct("BMW",1500000,2)
+	crudpgdb.GetProduct(3)
 }

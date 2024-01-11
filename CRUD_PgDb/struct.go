@@ -6,4 +6,5 @@ type Product struct {
 	Name  string
 	Price int
 	Supplier_id int
+	Supplier_name string
 }
