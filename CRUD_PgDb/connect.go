@@ -7,8 +7,8 @@ import (
 )
 
 const (
-	host     = "localhost"      // or the Docker service name if running in another container
-	port     = 5432             // default PostgreSQL port
+	host     = "localhost"    // or the Docker service name if running in another container
+	port     = 5432           // default PostgreSQL port
 	user     = "dearuser"     // as defined in docker-compose.yml
 	password = "dearpassword" // as defined in docker-compose.yml
 	dbname   = "deardatabase" // as defined in docker-compose.yml
@@ -25,6 +25,7 @@ func ConnectionDB() {
 
 	// Open a connection
 	sdb, err := sql.Open("postgres", psqlInfo)
+
 	if err != nil {
 		log.Fatal(err)
 	}
