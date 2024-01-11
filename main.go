@@ -11,4 +11,5 @@ func main() {
 	//crudpgdb.GetProduct(6)
 	//crudpgdb.UpdateProduct(6,"Orange",50,1)
 	//crudpgdb.DeleteProduct(7)
+	crudpgdb.GetAllProduct()
 }
