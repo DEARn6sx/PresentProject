@@ -3,11 +3,11 @@ version: '3.8'
 services:
   postgres:
     image: postgres:latest
-    container_name: postgres
+    container_name: postgresDB41
     environment:
-      POSTGRES_DB: mydeardatabase
-      POSTGRES_USER: mydearuser
-      POSTGRES_PASSWORD: mydearpassword
+      POSTGRES_DB: deardatabase
+      POSTGRES_USER: dearuser
+      POSTGRES_PASSWORD: dearpassword
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -16,7 +16,7 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4:latest
-    container_name: pgadmin
+    container_name: pgadminDB41
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
